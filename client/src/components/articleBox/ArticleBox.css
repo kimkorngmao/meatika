@@ -1,0 +1,29 @@
+.article-box a{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.article-box a .left{
+    width: 135px;
+    min-width: 135px;
+    aspect-ratio: 16/9;
+    background-color: #eee;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.article-box a .article-title{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.article-box a .right{
+    width: 100%;
+}

@@ -1,0 +1,37 @@
+.search-box{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin: 0 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #eee;
+}
+
+.search-box button{
+    outline: 0;
+    border: 0;
+    width: 40px;
+    height: 100%;
+    color: var(--text-color);
+    background-color: transparent;
+
+}
+
+.search-box button.active{
+    color: var(--active-text-color);
+}
+
+.search-box input{
+    outline: 0;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+.search-box input::placeholder{
+    font-size: 16px;
+}

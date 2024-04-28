@@ -1,0 +1,25 @@
+#tending-section{
+    margin: 10px;
+    padding: 10px;
+    background-color: #fceae4;
+    border-radius: 5px;
+}
+
+.tending-section-bar{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.trending-list{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+}
+
+.trending-list::-webkit-scrollbar{
+    display: none;
+}

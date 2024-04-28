@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F5F5;
+}
+
+:root{
+  --max-width: 700px;
+  --site-bg-color: #FFFFFF;
+  --text-color: #6F7B79;
+  --active-text-color: #000000;
+  --orange-color: #fa9e1e;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
+
+*{
+  box-sizing: border-box;
+  scrollbar-width: 0;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+
+.main-container{
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: var(--site-bg-color);
+}
+
+.skeleton-line{
+  height: 15px;
+  border-radius: 2px;
+  background-color: #eee;
+}
+
+.skeleton-line.line-100{
+  width: 100%;
+}
+
+.skeleton-line.line-90{
+  width: 90%;
+  margin-top: 4px;
+}
+
+.skeleton-line.line-50{
+  width: 50%;
+  margin-top: 4px;
+}
+
+.skeleton-line.line-30{
+  width: 30%;
+  margin-top: 4px;
+}
+
+.skeleton-box {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-color: #EEEEEE;
+}
+
+.skeleton-box::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 2s infinite;
+  content: '';
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+.title{
+  color: #272727;
+}
+
+.paragraph{
+  color: #444444;
+  margin: 0;
+}
+
+.error-message{
+  margin: 5px 0;
+  padding: 5px 10px;
+  color: #FF0000;
+  background-color: #FFE0E0;
+  border-radius: 2px;
+}
+
+.success-message{
+  margin: 5px 0;
+  padding: 5px 10px;
+  color: #FFFFFF;
+  background-color: #0DD877;
+  border-radius: 2px;
+}

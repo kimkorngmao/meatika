@@ -1,0 +1,38 @@
+.create-form{
+    padding: 10px;
+}
+
+.create-form select,
+.create-form input,
+.create-form textarea
+{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    outline: 0;
+    border-radius: 2px;
+    resize: none;
+    border: 2px solid #eee;
+}
+
+.create-form textarea{
+    min-height: 70px;
+    font-family: "Poppins", sans-serif;
+}
+
+.create-form input:focus{
+    border-color: black;
+}
+
+.create-form button{
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    outline: 0;
+    border: 1px solid #eee;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 2px;
+    background-color: #212223;
+}

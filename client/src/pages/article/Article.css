@@ -1,0 +1,22 @@
+.article{
+    padding: 10px;
+    line-height: 32px;
+}
+
+.article > h1, h2, h3, h4, h5, h6{
+    color: #272727;
+}
+
+.article .article-title{
+    color: #444444;
+}
+
+.article p{
+    color: #444444;
+}
+
+.article-cover-image{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 2px;
+}

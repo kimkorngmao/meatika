@@ -1,0 +1,36 @@
+#latest-section{
+    margin: 10px;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.latest-section-bar{
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #FF334B;
+}
+
+.latest-title{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.latest-section-footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.read-more-btn{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 7px 10px;
+    color: #3700b3;
+    border: 2px solid #3700b3;
+    outline: 0;
+    text-decoration: none;
+    background-color: transparent;
+}

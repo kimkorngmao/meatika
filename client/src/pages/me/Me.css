@@ -1,0 +1,63 @@
+.table-list{
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.table-list .row{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 10px;
+}
+
+.table-list .row:nth-child(odd) {
+    color: #019879;
+    background-color: #F3F3F3;
+}
+
+.table-list .row .article-title,
+.table-list .row .categories-title
+{
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.table-list .row .control-btns{
+    width: 65px;
+    min-width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.table-list .row .control-btns button{
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.table-list .row .control-btns button:hover{
+    background-color: #eee;
+}
+
+.table-list .row .control-btns .update-btn:hover{
+    color: blue;
+}
+
+.table-list .row .control-btns .delete-btn:hover{
+    color: red;
+}
+
+.logout-btn{
+    cursor: pointer;
+    color: red;
+}
