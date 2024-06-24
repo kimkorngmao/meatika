@@ -7,7 +7,7 @@ This repository contains the source code for a web application that facilitates 
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/maokimkorng/meatika.git
+   git clone https://github.com/kimkorngmao/meatika.git
    ```
 
 2. **Install Dependencies:**
