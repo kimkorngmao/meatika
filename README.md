@@ -1,6 +1,6 @@
 # Meatika (មាទិកា)
 
-This repository contains the source code for a web application that facilitates article creation and management. It's designed with a client-server architecture, leveraging React for the frontend (`client`) and Node.js with Express for the backend (`server`).
+This repository contains the source code for a web application that facilitates article creation and management. It's designed with a client-server architecture and React for the frontend (`client`) and Node.js with Express for the backend (`server`).
 
 ## Project Setup
 
