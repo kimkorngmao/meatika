@@ -24,7 +24,6 @@ app.use('/accounts', accountRoute);
 app.use('/articles', articleRoute);
 app.use('/categories', categoryRoute);
 
-
 // Database connection
 mongoose.connect(process.env.DB_CONNECT_STR)
 .then(()=>{

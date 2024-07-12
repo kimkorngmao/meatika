@@ -15,9 +15,9 @@ This repository contains the source code for a web application that facilitates 
    Navigate to the project root directory and install dependencies for both the client and server sides:
 
    ```bash
-   cd articleApp
-   cd client && npm install
-   cd ../server && npm install
+   cd meatika
+   cd client && npm install && npm run dev #for client
+   cd server && npm install && npm run dev #for server
    ```
 
 3. **Configure Server Environment Variables (Required):**
@@ -25,11 +25,16 @@ This repository contains the source code for a web application that facilitates 
    - Create a file named `.env` in the `server` directory.
    - Add the following environment variables, replacing placeholders with your actual values:
 
-     ```
+     ```env
      PORT=5000  # Port on which the server listens (default: 5000)
      DB_CONNECT_STR=<your-mongodb-connection-string>
      JWT_SECRET_KEY=<your-secret-key>
      ALLOWED_ORIGINS=http://localhost:3000
+     ```
+
+   - Create a file named `.env` in the `client` directory.
+     ```env
+     REACT_APP_BASE_URL=http://localhost:5000
      ```
 
 ## Running the Application

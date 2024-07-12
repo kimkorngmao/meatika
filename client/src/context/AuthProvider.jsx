@@ -11,8 +11,7 @@ const AuthProvider = ({ children }) => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [user, setUser] = useState({});
 
-    axios.defaults.baseURL = 'http://localhost:5000';
-    // axios.defaults.baseURL = 'https://meatika-server.vercel.app';
+    axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
     useEffect(() => {
         // Check for existing token on page load
