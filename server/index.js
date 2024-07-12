@@ -9,7 +9,7 @@ require('dotenv').config()
 
 // Middleware
 app.use(cors({
-  origin: ["https://meatika.vercel.app"]
+  origin: process.env.ALLOWED_ORIGINS,
 }));
   
 app.use(express.json());
