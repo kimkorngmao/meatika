@@ -7,7 +7,7 @@ const articleSchema = new mongoose.Schema({
     trim: true
   },
   content: {
-    type: String,
+    type: Text,
     required: true
   },
   views: {
