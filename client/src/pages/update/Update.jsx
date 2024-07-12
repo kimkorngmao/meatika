@@ -83,7 +83,7 @@ export const Update = () => {
                     <label htmlFor="content">Content</label>
                     <ReactTextareaAutosize type="text" id='content' value={content} onChange={e=>{ setContent(e.target.value) }} />
                 </div>
-                <button>Create</button>
+                <button>Update</button>
             </form>
         </>
     )

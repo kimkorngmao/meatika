@@ -24,7 +24,7 @@ export const LatestSection = () => {
         </div>
         {
           articles.length > 0 ? 
-          articles.map(article=>(
+          articles.slice(0, 5).map(article=>(
             <ArticleBox article={article} key={article._id} />
           )) :
           <>
