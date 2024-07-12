@@ -9,7 +9,7 @@ require('dotenv').config()
 
 // Middleware
 app.use(cors({
-  origin: ["https://meatika.vercel.app"]
+  origin: process.env.ALLOWED_ORIGINS
 }));
   
 app.use(express.json());
@@ -20,9 +20,6 @@ app.use((req, res, next) => {
 });
 
 // Router
-app.get('/', (req, res)=>{
-  res.status(200).json({"intro": "Hello world!"})
-})
 app.use('/accounts', accountRoute);
 app.use('/articles', articleRoute);
 app.use('/categories', categoryRoute);
