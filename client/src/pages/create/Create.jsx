@@ -68,16 +68,21 @@ export const Create = () => {
                     <input type="text" id='image' value={imageUrl} onChange={e=>{ setImageUrl(e.target.value) }} />
                 </div>
                 <div className="form-control">
-                    <label htmlFor="title">Category</label>
-                    { categories.length > 0 &&
-                    <select value={selectedCate} onChange={(event) => setSelectedCate(event.target.value)}>
-                    {categories.map((category) => (
-                    <option key={category._id} value={category._id}>
-                        {category.name}
-                    </option>
-                    ))}
-                    </select>
-                    }
+                    <label htmlFor="category">Category</label>
+                    {categories.length > 0 && (
+                        <select
+                            value={selectedCate}
+                            onChange={(event) => setSelectedCate(event.target.value)}
+                            required
+                        >
+                            <option value="" disabled>Select a category</option>
+                            {categories.map((category) => (
+                                <option key={category._id} value={category._id}>
+                                    {category.name}
+                                </option>
+                            ))}
+                        </select>
+                    )}
                 </div>
                 <div className="form-control">
                     <label htmlFor="content">Content</label>
