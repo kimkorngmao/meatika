@@ -8,11 +8,14 @@ export const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
   const { login } = useAuth();
   const navigate = useNavigate();
 
   async function loginUser(e){
     e.preventDefault();
+    setIsLoading(true);
     try {
       const data = await login({username: username, password: password})
       if(data.isSuccess){
@@ -22,6 +25,8 @@ export const Login = () => {
       }
     } catch (error) {
       setError("Sorry, something went wrong!");
+    } finally{
+      setIsLoading(false);
     }
   }
   return (
@@ -37,7 +42,8 @@ export const Login = () => {
             <label htmlFor="password">Password</label>
             <input type="password" id='password' onChange={e=>{ setPassword(e.target.value) }} />
         </div>
-        <button type="submit">Login</button>
+        <p>New Member Here? <span className='register-link' onClick={()=>{ setError("Register is not allowed.") }}>Register</span></p>
+        <button type="submit" disabled={isLoading} className='login-btn'>Login</button>
     </form>
     </>
   )

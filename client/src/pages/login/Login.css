@@ -27,3 +27,13 @@
     border-radius: 2px;
     background-color: #212223;
 }
+
+.login-form button:disabled{
+    cursor: not-allowed;
+    background-color: #909292;
+}
+
+.register-link{
+    cursor: pointer;
+    color: rgb(49, 32, 238);
+}
